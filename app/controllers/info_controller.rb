@@ -1,10 +1,10 @@
-class InfoController < ApplicationController
+class InfoController < ActionController::Base
   def show
     shop_info = {
-      name: "Nome da Loja",
-      color: "Cor da Loja",
-      owner: "Proprietário da Loja",
-      department: "Departamento da Loja"
+      name: "Catchau",
+      color: "#a0a168",
+      owner: "Felipe Rocha Silveira",
+      department: "Loja de Hardware"
     }
     render json: shop_info
   end

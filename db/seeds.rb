@@ -1,9 +1,8 @@
-# This file should ensure the existence of records required to run the application in every environment (production,
-# development, test). The code here should be idempotent so that it can be executed at any point in every environment.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Example:
-#
-#   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
-#     MovieGenre.find_or_create_by!(name: genre_name)
-#   end
+Produto.create(name: "Placa Mãe ASUS Prime B450M-A", price: 450.00, photo: "https://example.com/motherboard.jpg", is_promotion: true)
+Produto.create(name: "Processador AMD Ryzen 5 3600", price: 1200.00, photo: "https://example.com/ryzen5.jpg", is_promotion: false)
+Produto.create(name: "Memória RAM Kingston 8GB DDR4", price: 300.00, photo: "https://example.com/ram.jpg", is_promotion: true)
+Produto.create(name: "SSD Samsung 860 EVO 500GB", price: 600.00, photo: "https://example.com/ssd.jpg", is_promotion: false)
+Produto.create(name: "Fonte Corsair 550W", price: 350.00, photo: "https://example.com/psu.jpg", is_promotion: true)
+Produto.create(name: "Gabinete Cooler Master MasterBox Q300L", price: 250.00, photo: "https://example.com/case.jpg", is_promotion: false)
+Produto.create(name: "Mouse Logitech MX Master 3", price: 450.00, photo: "https://example.com/mouse.jpg", is_promotion: true)
+Produto.create(name: "Teclado Mecânico Corsair K95 RGB", price: 750.00, photo: "https://example.com/keyboard.jpg", is_promotion: false)

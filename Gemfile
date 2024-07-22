@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "3.2.4"
+ruby "3.3.4"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.3", ">= 7.1.3.4"
@@ -30,7 +30,7 @@ gem 'active_model_serializers'
 
 gem 'update'
 
-gem 'rack-cors'
+gem 'rack-cors', require: 'rack/cors'
 
 
 # Use Redis adapter to run Action Cable in production
@@ -42,8 +42,8 @@ gem 'rack-cors'
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
 
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem "tzinfo-data", platforms: %i[ windows jruby ]
+# mswin mswin64 mingw x64_mingw does not include zoneinfo files, so bundle the tzinfo-data gem
+gem "tzinfo-data", platforms: %i[ mswin mswin64 mingw x64_mingw jruby ]
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: true
@@ -53,7 +53,7 @@ gem "bootsnap", require: true
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem "debug", platforms: %i[ mri windows ]
+  gem "debug", platforms: %i[ mri mswin mswin64 mingw x64_mingw ]
 end
 
 group :development do
