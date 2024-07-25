@@ -21,6 +21,16 @@ Certifique-se de ter as seguintes dependências instaladas:
     git clone https://github.com/seu-usuario/seu-repositorio.git
     cd seu-repositorio
     ```
+    ````
+    
+sudo apt install git curl autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm6 libgdbm-dev libdb-dev
+curl -fsSL https://github.com/rbenv/rbenv-installer/raw/HEAD/bin/rbenv-installer | bash
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+source ~/.bashrc
+rbenv install -l
+
+´´´´
 
 2. Instale as dependências:
 
@@ -40,7 +50,7 @@ Certifique-se de ter as seguintes dependências instaladas:
     rails server
     ```
 
-    O servidor será iniciado em `http://localhost:3000`.
+    O servidor será iniciado em `http://localhost:3424`.
 
 ## Testando a API
 
@@ -56,29 +66,14 @@ Certifique-se de ter as seguintes dependências instaladas:
 1. Para obter todos os produtos:
 
     ```bash
-    curl -X GET -H "Accept: application/json" "http://localhost:3000/products"
+     "http://localhost:3424/products"
     ```
 
 2. Para obter informações da loja:
 
     ```bash
-    curl -X GET -H "Accept: application/json" "http://localhost:3000/info"
+    "http://localhost:3424/info"
     ```
-
-### Usando HTML e JavaScript
-
-1. Use o arquivo para testar a API (`index.html`):
-
-    O arquivo está na pasta HTML
-
-2. Sirva o arquivo HTML usando um servidor HTTP simples (por exemplo, `http-server`):
-
-    ```bash
-    npm install -g http-server
-    http-server
-    ```
-
-3. Abra o navegador e acesse `http://localhost:8080` para ver os resultados.
 
 ## Licença
 
