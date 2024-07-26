@@ -17,3 +17,6 @@ Produto.create(name: "Teclado Mecânico Logitech g915", price:  1249.00, photo: 
 Produto.create(name: "Placa de Vídeo NVIDIA GeForce RTX 3060 FE", price: 2000.00, photo: "https://images.nvidia.com/aem-dam/Solutions/geforce/ampere/rtx-3060-ti/geforce-rtx-3060-ti-product-gallery-full-screen-3840-1-bl.jpg", is_promotion: true)
 
 Produto.create(name: "Monitor LG UltraGear 27GL850", price: 2500.00, photo: "https://m.media-amazon.com/images/I/7166tFSuGBL._AC_UF894,1000_QL80_.jpg", is_promotion: false)
+
+Category.create(name: "TI")
+Category.create(name: "Eletrodoméstico")

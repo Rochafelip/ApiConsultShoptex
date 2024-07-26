@@ -1,6 +1,6 @@
 class ProductsController  < ActionController::Base
   def index
-    products = Produto.all
-    render json: products, only: [:photo, :name, :price, :is_promotion]
+    @products = Product.all
+    render json: @products
   end
 end
