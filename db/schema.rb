@@ -14,7 +14,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_07_22_193643) do
 
   create_table "produtos", force: :cascade do |t|
     t.string "name"
-    t.decimal "price"
+    t.float "price"
     t.string "photo"
     t.boolean "is_promotion"
     t.datetime "created_at", null: false
